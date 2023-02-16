@@ -1,0 +1,38 @@
+.leftMenu{
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    left: 0px;
+    top: 1px;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+}
+img{
+    
+    width: 75px;
+}
+.robotIcon{
+    display: flex;
+    justify-content:  center;
+    padding: 30%;
+}
+.linksArea{
+    display: flex;
+    flex-direction: row;
+   margin-top: 10%;
+    align-items: center;
+    margin-left: 8%;
+}
+.linksArea svg{
+
+}
+.linksArea a{
+   margin-left: 5%;
+        text-align: center;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 62px;
+}

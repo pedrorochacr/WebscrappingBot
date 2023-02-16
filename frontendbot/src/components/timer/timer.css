@@ -1,0 +1,32 @@
+.time{
+    display: flex;
+    flex-direction: column;
+    
+}
+.display{
+    display: flex;
+    flex-direction: row;
+   height: 45%;
+  
+   margin-left: 10%;
+   margin-bottom: 7%;
+}
+p{
+    display: flex;
+   margin-left: 9%;
+   font-weight: 400;
+font-size: 30px;
+    align-items: center;
+    margin-top: 0px;
+    text-align: center;
+}
+.display span{
+    width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  background: #000
+}

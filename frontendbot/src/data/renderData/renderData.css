@@ -1,0 +1,38 @@
+.data{
+    margin-left: 20%;
+    background-color: #BE9063;
+    height: 900px;
+   
+}
+.dataTitle{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.dataTable{
+  
+    width: 45%;
+    background-color: white;
+   margin: auto;
+   border-spacing: 0px;
+   margin-top: 150px;
+   border-radius: 15px;
+    height: 300px;
+}
+.tableTitle{
+   background-color: #BFB3AA;
+   text-align: left;
+    font-weight: bold;
+    height: 100px;
+   font-size: 25px;
+
+}
+.tableRows{
+    font-size: 25px;
+    text-align: center;
+}
+
+th,td{
+    padding: 12px 15px;
+}
