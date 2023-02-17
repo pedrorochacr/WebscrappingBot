@@ -67,7 +67,27 @@
     
  
 }
-
+@media(max-width:437px){
+    .homePage{
+        margin-left: 35%;
+    }
+    .hour{
+   
+        width: 60%;
+        height:320px !important;
+        margin-left:15%;
+    }
+    .hour h4{
+      
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .hour svg{
+           
+            width: 60px;
+    }
+    
+}
 
 
 

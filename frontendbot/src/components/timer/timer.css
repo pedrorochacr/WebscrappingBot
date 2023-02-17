@@ -49,3 +49,16 @@ font-size: 30px;
     
  
 }
+@media(max-width:437px){
+    .display span{
+        width: 65px;
+      height: 60px;
+      line-height: 65px;
+      font-size: 30px;
+     
+    }
+    p{
+        font-size: 17px;
+     }
+    
+}

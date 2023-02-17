@@ -36,3 +36,27 @@ img{
     font-size: 30px;
     line-height: 62px;
 }
+@media(max-width:437px){
+    .leftMenu{
+        width: 35% !important;
+    }
+    .robotIcon{
+        margin-bottom: 25%;
+    }
+    img{
+        width: 45px;
+    }
+    .linksArea{
+       margin-top: 35%;
+       
+    }
+    .linksArea svg{
+        width: 35px !important;
+    }
+    .linksArea a{
+       margin-left: 3%;
+    
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
