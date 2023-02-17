@@ -1,6 +1,6 @@
 .homePage{
     width: 80%;
-    height: 720px;
+    height: max-content;
     display: flex;
     justify-content: center;
     margin-left: 20%;
@@ -34,6 +34,38 @@
     font-size: 28px;
     line-height: 40px;
     text-align: center;
+}
+@media(max-width: 1033px){
+    .homePage{
+        flex-direction: column;
+    }
+    .hour{
+        margin: auto;
+        width: 45%;
+        margin-top: 5%;
+        height: 450px !important;
+    }
+ 
+}
+
+@media(max-width: 594px){
+    .hour{
+   
+        width: 65%;
+        
+        height:350px !important;
+    }
+    .hour h4{
+      
+        font-size: 23px;
+        line-height: 30px;
+    }
+    .hour svg{
+            margin-left: 37%;
+            width: 65px;
+    }
+    
+ 
 }
 
 

@@ -59,3 +59,48 @@ line-height: 45px;
 
 color: #000000;
 }
+
+@media(max-width: 1033px){
+    .formData{
+        margin: auto;
+        width: 70%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    form h4{
+        margin-top: 4% !important;
+    }
+    .saveButton{
+        margin-right: 15%;
+        align-self: end;
+    }
+ 
+}
+@media(max-width: 594px){
+    .formData h4{
+        font-size: 35px;
+        
+    }
+    .selectMarket{
+        width: 70%;
+        font-size: 16px !important;
+
+     }
+     .minMax{
+        font-size: 20px;
+        
+     }
+     input[type="text"]{
+        width: 50%;
+      
+    }
+    form h4{
+        margin-top: 4% !important;
+    }
+    .saveButton{
+        width: 35%;
+   
+    }
+ 
+}
+

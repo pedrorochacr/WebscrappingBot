@@ -30,3 +30,22 @@ font-size: 30px;
   text-align: center;
   background: #000
 }
+@media(max-width: 594px){
+    .display{ 
+       height: 45%;
+       margin-left: 10%;
+       margin-bottom: 7%;
+    }
+    p{
+       font-size: 23px;
+    }
+    .display span{
+        width: 71px;
+      height: 65px;
+      line-height: 65px;
+      font-size: 35px;
+     
+    }
+    
+ 
+}

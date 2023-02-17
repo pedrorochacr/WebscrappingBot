@@ -58,9 +58,9 @@ export default function SaveData(){
                     </div>
                 
                 </form>
-                
+                <button className="saveButton" onClick={e=>save(e)} >Salvar</button>
             </section>
-            <button className="saveButton" onClick={e=>save(e)} >Salvar</button>
+            
         </>
     )
 }

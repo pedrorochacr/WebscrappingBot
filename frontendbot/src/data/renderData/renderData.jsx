@@ -44,7 +44,6 @@ export default function RenderData(){
                         </tbody>
                     </table>
                 </div>
-                
             </div>
     </>)
 }
