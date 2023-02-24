@@ -49,6 +49,9 @@ export default function SaveData(){
                         <option value="1x2">Vencedor</option>
                         <option value="AmbasMarcam">Ambas Marcam</option>
                         <option value="HA">Handicap Asiático</option>
+                        <option value="EH">Handicap Europeu</option>
+                        <option value="DuplaChance">Dupla Chance</option>
+                        <option value="Exato">Placar Exato</option>
                     </select>
                     <h4  >Odd Range</h4>
                     <div className="minMax">
