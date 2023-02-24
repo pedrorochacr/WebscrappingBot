@@ -79,24 +79,7 @@ img{
    }
 }
 @media(max-width:437px){
-    .responsiveMenu{
-        display: none;
-    }
-    .responsiveMenuClicked{
-        display: none; 
-    }
-    .responsiveMenuClicked{
-        top: 59px !important;
-        
-    }
-    .responsiveMenuClicked a{
-        font-size: 18px;
-        line-height: 42px;
-        
-    }
-    .leftMenu{
-        width: 35% !important;
-    }
+    
     .robotIcon{
         margin-bottom: 25%;
     }
