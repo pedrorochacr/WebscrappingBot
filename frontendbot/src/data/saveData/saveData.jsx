@@ -44,6 +44,7 @@ export default function SaveData(){
                         <option selected disabled > Selecione uma opção</option>
                         <option value="Todos">Todos</option>
                         <option value="OverGols">OverGols</option>
+                        <option value="UnderGols">UnderGols</option>
                         <option value="1x2">Vencedor</option>
                         <option value="AmbasMarcam">Ambas Marcam</option>
                         <option value="HA">Handicap Asiático</option>
