@@ -76,4 +76,10 @@ th,td{
     }
  
 }
-
+@media(max-width:688px){
+    .data{
+        margin-left: 0px;
+        
+       
+    }
+ }

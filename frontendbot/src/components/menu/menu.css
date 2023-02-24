@@ -24,6 +24,43 @@ img{
     align-items: center;
     margin-left: 8%;
 }
+.responsiveMenu{
+    width: 100%;
+    background: #BE9063;
+   
+    z-index: 5;
+}
+.responsiveMenu button{
+    cursor: pointer;
+    background: transparent;
+    color: black;
+    border: none;   
+}
+.hamburguerButtonClicked{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin-right: 20%;
+    left: 0px;
+    top: 1px;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    transition:  .4s;
+
+  
+    
+}
+.hamburguerButtonClicked button{
+    display: flex;
+    justify-content: end;
+
+  
+    
+}
+.responsiveMenuClicked a{
+    margin-left: 55px;
+}
 .linksArea svg{
 
 }
@@ -36,7 +73,27 @@ img{
     font-size: 30px;
     line-height: 62px;
 }
+@media(max-width:688px){
+   .leftMenu{
+     display: none !important;
+   }
+}
 @media(max-width:437px){
+    .responsiveMenu{
+        display: none;
+    }
+    .responsiveMenuClicked{
+        display: none; 
+    }
+    .responsiveMenuClicked{
+        top: 59px !important;
+        
+    }
+    .responsiveMenuClicked a{
+        font-size: 18px;
+        line-height: 42px;
+        
+    }
     .leftMenu{
         width: 35% !important;
     }
