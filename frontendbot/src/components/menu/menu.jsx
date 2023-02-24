@@ -16,15 +16,18 @@ export default function Menu() {
         if (menuIconVisible) {
 
             return <>
+                <div className="linksMobile">
+                    <section className="linksArea">
+                        <BsJournalText size={38}></BsJournalText>
+                        <Link onClick={updateMenu} to="/">Estratégia</Link>
+                    </section>
+                    <section className="linksArea">
+                        <BiData size={38}></BiData>
+                        <Link onClick={updateMenu} to="/data">Dados Salvos</Link>
+                    </section>
 
-                <section className="linksArea">
-                    <BsJournalText size={38}></BsJournalText>
-                    <Link onClick={updateMenu} to="/">Estratégia</Link>
-                </section>
-                <section className="linksArea">
-                    <BiData size={38}></BiData>
-                    <Link onClick={updateMenu} to="/data">Dados Salvos</Link>
-                </section>
+                </div>
+                
             </>
         }
     }

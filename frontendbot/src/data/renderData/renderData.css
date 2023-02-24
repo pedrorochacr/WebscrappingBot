@@ -83,22 +83,20 @@ th,td{
        
     }
  }
- @media(max-width: 305px){
+ @media(max-width: 450px){
     .dataTitle{
-        font-size: 23px;
+        font-size: 32px;
     }
    
     .dataTable{
        margin-top: 100px;
-      
-     
     }
     .tableTitle{
        background-color: #BFB3AA;
        text-align: left;
         font-weight: bold;
         height: 100px;
-       font-size: 14px;
+       font-size: 25px;
     
     }
     .tableRows{
@@ -110,5 +108,24 @@ th,td{
         padding: 8px  10px;
         width: 60px !important;
     }
+ 
+}
+ @media(max-width: 305px){
+    .dataTitle{
+        font-size: 23px;
+    }
+   
+   
+    .tableTitle{
+       background-color: #BFB3AA;
+       text-align: left;
+        font-weight: bold;
+        height: 100px;
+       font-size: 14px;
+    
+    }
+   
+    
+   
  
 }

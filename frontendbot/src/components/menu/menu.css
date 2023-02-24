@@ -78,24 +78,20 @@ img{
    }
 }
 @media(max-width:437px){
-    
-    .robotIcon{
-        margin-bottom: 25%;
-    }
-    img{
-        width: 45px;
+    .linksMobile{
+        margin-top: 20%;
     }
     .linksArea{
-       margin-top: 35%;
-       
-    }
-    .linksArea svg{
-        width: 35px !important;
+        margin-left: 19% !important;
+        margin-top: 20% !important;
     }
     .linksArea a{
-       margin-left: 3%;
-    
-        font-size: 18px;
-        line-height: 25px;
-    }
+        margin-left: 5%;
+             text-align: center;
+         color: black;
+         text-decoration: none;
+         font-weight: 400;
+         font-size: 35px;
+         
+     }
 }

@@ -45,7 +45,7 @@ export default function SaveData(){
                         <option value="Todos">Todos</option>
                         <option value="OverGols">OverGols</option>
                         <option value="1x2">Vencedor</option>
-                        <option value="ambasMarcam">Ambas Marcam</option>
+                        <option value="AmbasMarcam">Ambas Marcam</option>
                         <option value="HA">Handicap Asiático</option>
                     </select>
                     <h4  >Odd Range</h4>
