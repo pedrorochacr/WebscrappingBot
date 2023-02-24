@@ -46,17 +46,16 @@ img{
     display: flex;
     flex-direction: column;
     background: #FFFFFF;
-    transition:  .4s;
+    transition:  .2s;
 
-  
     
 }
 .hamburguerButtonClicked button{
     display: flex;
     justify-content: end;
-
+    transition: .2s;
   
-    
+  
 }
 .responsiveMenuClicked a{
     margin-left: 55px;

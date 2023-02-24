@@ -89,7 +89,16 @@
     }
     
 }
-
+@media(max-width: 305px){
+    
+    .hour{
+   
+        width: 75%;
+        height:320px !important;
+        margin-left:15%;
+    }
+ 
+}
 
 
 

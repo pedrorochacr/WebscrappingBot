@@ -83,3 +83,32 @@ th,td{
        
     }
  }
+ @media(max-width: 305px){
+    .dataTitle{
+        font-size: 23px;
+    }
+   
+    .dataTable{
+       margin-top: 100px;
+      
+     
+    }
+    .tableTitle{
+       background-color: #BFB3AA;
+       text-align: left;
+        font-weight: bold;
+        height: 100px;
+       font-size: 14px;
+    
+    }
+    .tableRows{
+        font-size: 20px;
+        
+    }
+    
+    th,td{
+        padding: 8px  10px;
+        width: 60px !important;
+    }
+ 
+}
