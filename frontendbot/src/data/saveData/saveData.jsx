@@ -23,16 +23,17 @@ export default function SaveData(){
     }
     async function save(event){
         try {
+            event.preventDefault();
             alert('Dados submetidos com sucesso!');
             const method = 'put';
             
-            const url = 'https://api-webscrappingbot.vercel.app/strategy/1';
+            const url = 'https://api-webscrappingbot.onrender.com/strategy/1';
             const resp = await axios[method](url, strategy);
            
            formRef.current?.reset()
             console.log(resp);
         } catch (error) {
-            console.error(error);
+            console.error(error.response.data);
         }
     }
     return(

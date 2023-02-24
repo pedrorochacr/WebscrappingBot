@@ -10,7 +10,7 @@ export default function RenderData(){
     async function getStrategy(){
         try {
             const method = 'get';
-            const url = 'https://api-webscrappingbot.vercel.app/strategy/1';
+            const url = 'https://api-webscrappingbot.onrender.com/strategy/1';
             const resp = await axios[method](url);
             setResponse(resp.data)
         } catch (error) {
