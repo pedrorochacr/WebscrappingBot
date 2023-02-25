@@ -2,24 +2,40 @@
 import "./renderData.css"
 import axios from "axios"
 import { useEffect, useState } from "react";
-export default function RenderData(){
+import { firebaseApp } from "../firebaseconfig/firebaseInit";
+import {
+    getFirestore,
+    collection,
+    addDoc,
+    doc,
+    deleteDoc,
+    getDocs,
+} from "firebase/firestore";
+export default function RenderData() {
+
+    const db = getFirestore(firebaseApp)
+    const strategyCollection = collection(db, "strategy")
     const [response, setResponse] = useState([])
     useEffect(() => {
-        getStrategy();
-    }, []);
-    async function getStrategy(){
-        try {
-            const method = 'get';
-            const url = 'https://api-webscrappingbot.onrender.com/strategy/1';
-            const resp = await axios[method](url);
-            setResponse(resp.data)
-        } catch (error) {
-            console.error(error);
+        let mounted = true
+        const getStrategy = async () => {
+            try {
+                const data = await getDocs(strategyCollection)
+                if (mounted) {
+                    setResponse(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+                }
+            } catch (error) {
+                console.error(error);
+            }
         }
-    }
+        getStrategy()
+        return () => {
+            mounted = false
+        }
+    }, [strategyCollection])
 
-    return(
-    <>
+    return (
+        <>
             <div className="data">
                 <section className="dataTitle">
                     <h4>Filtros Configurados</h4>
@@ -34,16 +50,18 @@ export default function RenderData(){
                             </tr>
                         </thead>
                         <tbody className="tableRows">
-                        
-                            <tr >
-                                <td>{response.market}</td>
-                                <td>{response.oddMin}</td>
-                                <td>{response.oddMax}</td>
-                            </tr>
-                            
+
+                            {response.map((item) => (
+                                <tr key={item.id}>
+                                    <td>{item.market}</td>
+                                    <td>{item.oddMin}</td>
+                                    <td>{item.oddMax}</td>
+                                </tr>
+                            ))}
+
                         </tbody>
                     </table>
                 </div>
             </div>
-    </>)
+        </>)
 }

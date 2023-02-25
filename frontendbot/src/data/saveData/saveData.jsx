@@ -3,7 +3,16 @@
 import axios from "axios"
 import {  useRef, useState } from "react"
 import "./saveData.css"
-import { toast } from 'react-toastify';
+import { firebaseApp } from "../firebaseconfig/firebaseInit";
+import {
+    getFirestore,
+    collection,
+
+    doc,
+    setDoc,
+   
+} from "firebase/firestore";
+
 import 'react-toastify/dist/ReactToastify.css';
 const defaultStrategy= {
     strategy: {
@@ -15,6 +24,9 @@ const defaultStrategy= {
 }
 
 export default function SaveData(){
+    const db =getFirestore(firebaseApp)
+    const strategyCollection = collection(db,"strategy")
+    
     let formRef = useRef()
     const [strategy, setStrategy] = useState([])
     function handleInputChange(event) {
@@ -23,15 +35,15 @@ export default function SaveData(){
     }
     async function save(event){
         try {
-            event.preventDefault();
-            alert('Dados submetidos com sucesso!');
-            const method = 'put';
-            
-            const url = 'https://api-webscrappingbot.onrender.com/strategy/1';
-            const resp = await axios[method](url, strategy);
-           
-           formRef.current?.reset()
-            console.log(resp);
+            const docRef = doc(strategyCollection, 'MIMjcZN1XmjrWwMqkLEh');
+
+        // Set the new data
+            await setDoc(docRef, {
+                market: strategy.market,
+                oddMin: strategy.oddMin,
+                oddMax: strategy.oddMax
+            });
+            alert("Dados submetidos com sucesso!!")
         } catch (error) {
             console.error(error.response.data);
         }
