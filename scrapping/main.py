@@ -1,24 +1,20 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import pandas as pd
 import time
 from tqdm import tqdm
 import os
 from selenium import webdriver
 
-    
-import requests
-
 import telepot
 
 
-API_BOT = '5735408612:AAERpJsMD1Y0B5qGBHFO5iHYuw8_9VGVFYw'
+API_BOT = os.getenv.API_BOT
 bot = telepot.Bot(API_BOT)
 
 
 def EnviarMensagemTelegram(mensagem):
     try:
-        bot.sendMessage(364185086, mensagem)
+        bot.sendMessage(os.getenv.CHAT_ID, mensagem)
     except:
         pass
 
