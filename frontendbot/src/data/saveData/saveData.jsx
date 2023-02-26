@@ -36,7 +36,6 @@ export default function SaveData(){
     async function save(event){
         try {
             const docRef = doc(strategyCollection, 'MIMjcZN1XmjrWwMqkLEh');
-
         // Set the new data
             await setDoc(docRef, {
                 market: strategy.market,
